@@ -1,6 +1,8 @@
+import MyParagraph from "./MyParagraph";
+
 const DemoOutput = props =>{
     console.log( 'running demo')
-    return (props.show? <p>This is new!</p>:null)
+    return <MyParagraph>{props.show? 'This is new!':''}</MyParagraph>
 
 }
 
